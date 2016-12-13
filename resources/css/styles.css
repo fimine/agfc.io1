@@ -1,8 +1,20 @@
 
+
+html, body {
+    height:100%;
+} 
+body 
+    {
+        
+        background-image: url("img/header_sky.jpg");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
 .agfc_header{
-    background-image: url("img/header_sky.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+   
+    
     height: 100vh;
     text-align:center;
     
