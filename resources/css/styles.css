@@ -7,7 +7,7 @@ body
     {
         
         background-image: url("img/header_sky.jpg");
-        background-size: auto 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: left top;
     }
@@ -20,16 +20,19 @@ body
     
 }    
 
+.agfc_opacity
+{
+background-color:rgba(255,255,255,0.0) !important;
+
+}
+
+
 .agfc_nav_wrap{
   display: inline-block;
   text-align: right;
   width: 100%;  
   background-color:rgba(255,255,255,0.25);
-}
-
-.back1
-{
-   background-color:rgba(255,255,255,0.25);
+  height:auto;
 }
 
 .agfc_topnav_flexcontainer{
