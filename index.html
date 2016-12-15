@@ -5,35 +5,49 @@
 <head>
   <title>agfc</title>
 
+  <!--External components-->
+  <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
   <!--semantic-ui components-->
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!--agfc_components-->
   <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 
+
+
+
 </head>
 
-</html>
+
+
+
 
 <body>
   <header class="agfc_header">
 
-       <!--NavBar -->
-    <div class="agfc_nav_wrap">
+    <!--NavBar -->
+    <div class="agfc_nav_wrap transition hidden">
       <!--<div class="ui  grid">-->
 
-        <div class="ui red inverted right floated menu agfc_opacity">
-            <a class="item">
-    About Us
+      <div class="ui red inverted right floated stackable menu agfc_opacity">
+        <a class="item">
+          <i class="privacy icon"></i> About Us
         </a>
-          <a class="item">
-    Jobs
-  </a>
-          <a class="item">
-    Locations
-  </a>
-        </div>
+        <a class="item">
+          <i class="trophy icon"></i> Jobs
+        </a>
+        <a class="item">
+          <i class="send outline icon"></i> Locations
+        </a>
+      </div>
       <!--</div>-->
     </div>
 
@@ -51,20 +65,20 @@
         </a>
       </div>
     </div>
-    <div class="agfc_centerpiece">
+    <div class="agfc_centerpiece transition hidden">
       <div class=agfc_center_flexcontainer>
 
-        <div class="agfc_hero">
+        <div class="agfc_hero ">
           What would you rather do?
         </div>
 
         <div class="agfc_welcome_icons">
 
-          <button class="ui circular transparent inverted button icon" aria-label="label">
+          <button id="#Idea" class="ui circular transparent inverted button icon" aria-label="label">
       <i class="idea icon"></i>
       Learn more
     </button>
-          <button class="ui circular transparent inverted button icon" aria-label="label">
+          <button id="#Chill" class="ui circular transparent inverted button icon" aria-label="label">
       <i class="file text outline icon"></i>
       Chill..
     </button>
@@ -73,4 +87,67 @@
     </div>
   </header>
 
+  <!--1st sub - little more explaining-->
+  <div class="agfc_first_sub">
+    <div class="agfc_first_sub_text">
+      Est anim cupidatat sint quis.
+    </div>
+    <br/>
+    <div class="ui  relaxed grid">
+      <div class="four wide column">
+        <p class="agfc_first_sub_icons_wrap">
+          <i class="users massive icon agfc_first_sub_icon"></i>
+        </p>
+        <p>Consectetur aute esse officia ut cillum aliquip. Veniam duis fugiat mollit anim esse aute veniam ut adipisicing deserunt
+          duis ut. Nostrud commodo cillum magna cupidatat nostrud officia. Ullamco nostrud ullamco aute aliquip magna ipsum
+          nulla sint quis elit fugiat ut.
+        </p>
+      </div>
+      <div class="four wide column">
+        <p class="agfc_first_sub_icons_wrap">
+          <i class="users massive icon agfc_first_sub_icon"></i>
+        </p>
+        <p>
+          Anim in magna proident est culpa fugiat sunt nulla labore amet. Voluptate ex aliqua anim ut amet cillum exercitation pariatur
+          sunt ad. Elit cillum ut ut et ex ullamco irure commodo mollit sit sint irure non. Do incididunt magna exercitation
+          dolor irure aute et reprehenderit occaecat esse mollit. Non fugiat culpa duis eu velit magna eu id. Consectetur
+          ea labore culpa et aliqua Lorem non exercitation pariatur. Laboris nostrud ad in veniam id occaecat ad ut.
+        </p>
+
+      </div>
+
+      <div class="four wide column">
+       <p class="agfc_first_sub_icons_wrap">
+          <i class="users massive icon agfc_first_sub_icon"></i>
+        </p>
+        <p>
+          Officia elit fugiat elit exercitation non eu et. Eu labore cillum sit tempor officia. Et amet non do cupidatat veniam velit
+          ea. Laborum ut reprehenderit sit nostrud sit adipisicing laboris exercitation laborum nulla Lorem fugiat tempor.
+          Ea elit culpa cupidatat sit veniam. Deserunt sit est anim nostrud nostrud consequat et culpa magna. Laboris proident
+          cupidatat eiusmod culpa nisi cillum.
+        </p>
+      </div>
+      <div class="four wide column">
+        <p class="agfc_first_sub_icons_wrap">
+          <i class="users massive icon agfc_first_sub_icon"></i>
+        </p>
+        <p>
+          Elit aliqua aliqua duis excepteur culpa nisi nulla cupidatat occaecat. Amet in do mollit eu amet Lorem. Id anim officia tempor
+          quis amet labore. Laboris aliquip dolor ut adipisicing anim tempor ipsum. Irure labore dolore occaecat aute do
+          eiusmod dolore occaecat dolore. Excepteur ex deserunt irure dolor officia pariatur aliqua reprehenderit commodo
+          anim Lorem quis commodo. Sit ut ullamco amet sint.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--page scripts-->
+  <script src="resources/script/agfc_site.js" type="text/javascript">
+
+  
+  </script>
+
 </body>
+
+</html>

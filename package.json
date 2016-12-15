@@ -1,0 +1,24 @@
+{
+  "name": "agfc.io1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fontawesome": "^4.7.0",
+    "semantic-ui": "^2.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimine/agfc.io1.git"
+  },
+  "author": "AF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fimine/agfc.io1/issues"
+  },
+  "homepage": "https://github.com/fimine/agfc.io1#readme"
+}

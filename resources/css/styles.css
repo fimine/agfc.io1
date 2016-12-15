@@ -10,6 +10,7 @@ body
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left top;
+        background-attachment: fixed;
     }
 
 .agfc_header{
@@ -33,6 +34,7 @@ background-color:rgba(255,255,255,0.0) !important;
   width: 100%;  
   background-color:rgba(255,255,255,0.25);
   height:auto;
+  position: fixed;
 }
 
 .agfc_topnav_flexcontainer{
@@ -71,18 +73,47 @@ flex:auto;
 height:auto;
 margin-bottom: 10px;
 display: inline-block;
+font-family: Lato !important;
 font-size: 5vw;
 line-height: 5vw;
+text-shadow: 4px 4px #333333;
 /*
 border: 1,1,1,1;
 border-style: solid;*/
 
 }
 
-
 .agfc_welcome_icons
 {
   flex:auto;
   flex-shrink:1;
+}
+
+
+.agfc_first_sub
+{
+  background-color: floralwhite;
+  padding: 10px;
+
+}
+
+.agfc_first_sub_text
+{
+  font-size: 3vw;
+  line-height: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.agfc_first_sub_icons_wrap
+{
+  text-align: center;
+}
+
+.agfc_first_sub_icon
+{
+  font-size:60px;
+  color: #FFF3E0;
+  text-shadow: 1px 1px #333333;
 }
 
