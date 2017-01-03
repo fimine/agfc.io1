@@ -16,30 +16,41 @@ $('.agfc_nav_wrap')
     })
     ;
 
-
-// $('.agfc_first_sub_icon')
-// .hover()
-// .transition(
-//     {
-
-//     }
-// );
-
-// $(document).ready(function() {
-//     $('.agfc_first_sub_icon').hover(function(){
+// $(document).ready(() => {
+//     $('.agfc_first_sub_icon').hover(function () {
 //         $(this).transition('bounce');
-//     }, function(){});
+//     }, () => { });
 // });
 
-  $(document).ready(()=> {
-    $('.agfc_first_sub_icon').hover(function(){
+
+$('.agfc_nav_wrap')
+  .sticky({
+     
+    context: '#Header1'
+  })
+   console.log(this);
+;
+
+
+// go to anchor:
+function scrollToAnchor() {
+    $('.agfc_button_link').click(function () {
         console.log(this);
-        $(this).transition('bounce');
-    }, ()=>{});
-});
 
+        // //Animate
+        console.log($(this).attr('href'));
+        console.log($($(this).attr('href')));
 
+        event.preventDefault();
+        var $this = $(this),
+            thisOffset = $this.offset(),
+            thisTop = thisOffset.top;
 
-    // $('.agfc_first_sub_icon').hover((x)=>{
-    //      $(this).transition('jiggle');
-    // }, ()=>{});
+        $('html, body').animate({
+            scrollTop: thisTop
+        }, 400);
+        return false;
+    });
+    //   $('.scrollTop a').scrollTop(); // TODO
+}
+scrollToAnchor();
