@@ -34,17 +34,20 @@ $('.agfc_nav_wrap')
 
 // go to anchor:
 function scrollToAnchor() {
+
+var target = $("#MoreInfo");
+
     $('.agfc_button_link').click(function () {
-        console.log(this);
 
         // //Animate
         console.log($(this).attr('href'));
-        console.log($($(this).attr('href')));
+
+console.log(target);
 
         event.preventDefault();
         var $this = $(this),
             thisOffset = $this.offset(),
-            thisTop = thisOffset.top;
+            thisTop = thisOffset.top + 300;
 
         $('html, body').animate({
             scrollTop: thisTop
