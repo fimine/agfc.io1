@@ -3,6 +3,7 @@
 <html>
 
 <head>
+ <base href="./">
   <title>agfc</title>
 
   <!--External components-->
@@ -20,7 +21,21 @@
 
   <!--agfc_components-->
   <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+  <script src="agfc-app/src/app/app.component.ts"></script>
 
+
+  <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
 </head>
 
 <body>
@@ -59,7 +74,7 @@
       </div>
     </div>
     <div class="agfc_centerpiece transition hidden">
-      <div class=agfc_center_flexcontainer>
+      <div class="agfc_center_flexcontainer">
 
         <div class="agfc_hero ">
           What would you rather do?
@@ -157,6 +172,10 @@
 
   <div>
   </div>
+<app-root>
+Loading root!
+</app-root>
+
   <!--page scripts-->
   <script src="resources/script/agfc_site.js" type="text/javascript">
 
